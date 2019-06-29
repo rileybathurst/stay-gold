@@ -20,8 +20,8 @@ touch src/index.html
 ```
 
 [index.html](index.html)
-```
-    <!doctype html>
+```html
+<!doctype html>
 <html>
   <head>
     <title>Getting Started</title>
