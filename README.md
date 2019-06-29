@@ -1,34 +1,18 @@
 # Stay Gold
-A base webpack setup build to my needs as much as possible from [webpack.js.org](https://webpack.js.org/guides/getting-started/)
+A base webpack setup build to my needs as much as possible from [webpack.js.org](https://webpack.js.org/guides/getting-started/) and [Material Design](https://material.io/develop/web/docs/getting-started/)
 
-## Setup
+## Terminal
 ```bash
 mkdir stay-gold
 cd stay-gold
 npm init -y
 git init
-npm install webpack webpack-cli --save-dev
+mkdir src dist
+touch .gitignore index.html webpack.config.js src/index.html src/app.scss src/app.js
+npm install webpack webpack-cli webpack-dev-server css-loader sass-loader node-sass extract-loader file-loader autoprefixer postcss-loader @babel/core @babel/cli @babel/preset-env babel-loader --save-dev
+npm install --save lodash
 ```
-
-I'm using [github desktop](https://desktop.github.com) as it get's around the 2FA easier than $ git push.
-Drag the folder down to the dock icon.
-
 ```bash
-touch index.html
-mkdir src
-touch src/index.html
-```
-
-[index.html](index.html)
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Getting Started</title>
-    <script src="https://unpkg.com/lodash@4.16.6"></script>
-  </head>
-  <body>
-    <script src="./src/index.js"></script>
-  </body>
-</html>
+npm start
+npm build
 ```
