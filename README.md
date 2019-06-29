@@ -3,8 +3,10 @@ A base webpack setup build to my needs as much as possible from [webpack.js.org]
 
 ## Terminal
 ```bash
-mkdir stay-gold
-cd stay-gold
+GOLD="stay-gold-project"
+cd sites
+mkdir $GOLD
+cd $GOLD
 npm init -y
 git init
 mkdir src dist
