@@ -26,10 +26,7 @@ module.exports = {
             }
           },
           {
-            loader: 'sass-loader',
-            options: {
-              includePaths: ['./node_modules']
-            }
+            loader: 'sass-loader'
           },
         ]
       },
