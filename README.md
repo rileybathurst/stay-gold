@@ -15,11 +15,13 @@ mkdir src dist
 touch .gitignore index.html README.md webpack.config.js src/app.scss src/app.js
 npm install webpack webpack-cli webpack-dev-server css-loader sass-loader node-sass extract-loader file-loader autoprefixer postcss-loader @babel/core @babel/cli @babel/preset-env babel-loader --save-dev
 npm install --save lodash
-
 ```
 
-```bash
-
+```
 npm start
 npm run build
 ```
+
+### Issues
+
+The sass seems way overly complicated
